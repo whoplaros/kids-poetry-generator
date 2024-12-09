@@ -1,26 +1,78 @@
 body {
-	background-color: rgba(213, 177, 246, 0.2);
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
+
+	background: linear-gradient(
+		229deg,
+		#703ff4,
+		#5251fa,
+		#c216fa,
+		#8bd5fc,
+		#31cb7f
+	);
+	background-size: 1000% 1000%;
+
+	-webkit-animation: AnimationName 17s ease infinite;
+	-moz-animation: AnimationName 17s ease infinite;
+	animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 0% 83%;
+	}
+	50% {
+		background-position: 100% 18%;
+	}
+	100% {
+		background-position: 0% 83%;
+	}
+}
+@-moz-keyframes AnimationName {
+	0% {
+		background-position: 0% 83%;
+	}
+	50% {
+		background-position: 100% 18%;
+	}
+	100% {
+		background-position: 0% 83%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 83%;
+	}
+	50% {
+		background-position: 100% 18%;
+	}
+	100% {
+		background-position: 0% 83%;
+	}
 }
 
 h1 {
 	text-align: center;
 	font-weight: 800;
-	font-size: 36px;
+	font-size: 60px;
 	line-height: 1.5;
-	color: rgb(54, 2, 104);
+	font-family: "Pacifico", cursive;
+	color: white;
+	text-shadow: 2px 2px 4px black;
 }
 
 .container {
 	margin: 120px auto;
-	max-width: 600px;
-
+	max-width: 800px;
 	padding: 20px;
 }
 
 header {
 	margin-bottom: 20px;
+}
+main {
+	max-width: 600px;
+	margin: 40px auto;
 }
 
 form {
