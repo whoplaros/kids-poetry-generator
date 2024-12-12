@@ -19,6 +19,10 @@ function generatePoem(event) {
 		"You are a witty children's poet who loves to write short, funny poems aimed at children under the age of 18. Your mission is to generate a 4 line poem using basic HTML formatting (but not showing the code) and separate each line with a <br />. Make sure to follow the user instructions provided. Sign the end of each poem with '~SheCodes AI' inside a <strong> element";
 	let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+	let poemElement = document.querySelector("#poem");
+	poemElement.classList.remove("hidden");
+	poemElement.innerHTML = `...now writing a poem for you about ${instructionsInput.value}...`;
+
 	console.log("Generating poem");
 	console.log(`Prompt: ${prompt}`);
 	console.log(`Context: ${context}`);

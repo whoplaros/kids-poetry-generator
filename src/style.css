@@ -76,13 +76,21 @@ main {
 	margin: 40px auto;
 }
 
-form {
+.form-container {
 	padding: 30px;
 	background-color: white;
+	margin-bottom: 30px;
 	box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 	border-radius: 10px;
+}
+
+form {
 	display: flex;
-	margin-bottom: 30px;
+}
+.hint {
+	line-height: 1.5;
+	text-align: center;
+	font-size: 3em;
 }
 .question {
 	color: white;
@@ -116,7 +124,9 @@ form {
 	border-left: 3px solid rgb(54, 2, 104);
 	box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
-
+.hidden {
+	display: none;
+}
 .poem strong {
 	color: rgb(54, 2, 104);
 }
