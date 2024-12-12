@@ -30,5 +30,54 @@ function generatePoem(event) {
 	//Make a call to the API
 	axios.get(apiURL).then(displayPoem);
 }
+/*
+//emoji randomizer
+const emoji = [];
+
+async function getEmoji() {
+	let response = await fetch(
+		"https://emoji-api.com/emojis?access_key=e905b2c8e6f0321c0cdebcae6aa87c929b48918f"
+	);
+
+	data = await response.json();
+	console.log(data);
+	for (let i = 300; i < 500; i++) {
+		emoji.push({
+			emojiName: data[i].character,
+		});
+	}
+	const randomNum = Math.floor(Math.random() * emoji.length);
+
+	let emojiSlotFiller = document.querySelector("#emojiSlot");
+	emojiSlotFiller.innerHTML = emoji[randomNum].emojiName;
+}
+
+getEmoji();
+*/
+function updateEmoji() {
+	function getRandomEmoji() {
+		const emojiLibrary = [
+			"\u{1F601}",
+			"\u{1F60D}",
+			"\u{1F42D}",
+			"\u{1F303}",
+			"\u{1F434}",
+			"\u{1F434}",
+			"\u{1F429}",
+			"\u{1F430}",
+			"\u{1F433}",
+			"\u{1F437}",
+			"\u{1F442}",
+			"\u{1F440}",
+			"\u{1F431}",
+		];
+		const randomIndex = Math.floor(Math.random() * emojiLibrary.length);
+		return emojiLibrary[randomIndex];
+	}
+	const emojiContainer = document.querySelector("#emojiSlot");
+	emojiContainer.innerHTML = getRandomEmoji();
+}
+setInterval(updateEmoji, 3000);
+
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
