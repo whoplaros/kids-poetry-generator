@@ -6,14 +6,16 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="src/style.css" />
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<h1>🐣 AI Kids' Poetry Generator 🦖</h1>
+				<h1>AI Kids' Poetry Generator</h1>
 			</header>
 
 			<main>
+				<p class="question">What would you like me to write a poem about?</p>
 				<form id="poem-generator-form">
 					<input
 						type="text"
@@ -22,6 +24,7 @@
 						autofocus
 						required
 						autocomplete="off"
+						id="user-instructions"
 					/>
 					<input type="submit" class="submit-button" />
 				</form>
