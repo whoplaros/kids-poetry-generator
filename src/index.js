@@ -70,6 +70,28 @@ function updateEmoji() {
 			"\u{1F442}",
 			"\u{1F440}",
 			"\u{1F431}",
+			"\u{1F422}",
+			"\u{1F423}",
+			"\u{1F420}",
+			"\u{1F457}",
+			"\u{1F453}",
+			"\u{1F45F}",
+			"\u{1F482}",
+			"\u{1F4DA}",
+			"\u{1F6C1}",
+			"\u{1F34B}",
+			"\u{1F350}",
+			"\u{1F401}",
+			"\u{1F404}",
+			"\u{1F413}",
+			"\u{1F42A}",
+			"\u{1F40B}",
+			"\u{1F682}",
+			"\u{1F6A3}",
+			"\u{1F487}",
+			"\u{1F47D}",
+			"\u{1F41D}",
+			"\u{1F3C0}",
 		];
 		const randomIndex = Math.floor(Math.random() * emojiLibrary.length);
 		return emojiLibrary[randomIndex];
@@ -77,7 +99,7 @@ function updateEmoji() {
 	const emojiContainer = document.querySelector("#emojiSlot");
 	emojiContainer.innerHTML = getRandomEmoji();
 }
-setInterval(updateEmoji, 3000);
+setInterval(updateEmoji, 2000);
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
