@@ -62,7 +62,7 @@ function updateEmoji() {
 			"\u{1F42D}",
 			"\u{1F303}",
 			"\u{1F434}",
-			"\u{1F434}",
+			"\u{1F951}",
 			"\u{1F429}",
 			"\u{1F430}",
 			"\u{1F433}",
@@ -92,6 +92,18 @@ function updateEmoji() {
 			"\u{1F47D}",
 			"\u{1F41D}",
 			"\u{1F3C0}",
+			"\u{1F40D}",
+			"\u{1F339}",
+			"\u{1F335}",
+			"\u{1F965}",
+			"\u{1F33D}",
+			"\u{1F9C0}",
+			"\u{1F370}",
+			"\u{26FA}",
+			"\u{1F6EB}",
+			"\u{1F3B3}",
+			"\u{1F3A9}",
+			"\u{1F3B7}",
 		];
 		const randomIndex = Math.floor(Math.random() * emojiLibrary.length);
 		return emojiLibrary[randomIndex];
