@@ -122,6 +122,7 @@ form {
 	background-color: white;
 	padding: 20px;
 	line-height: 2;
+	border-radius: 10px;
 	font-weight: 500;
 	border-left: 3px solid rgb(54, 2, 104);
 	box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
@@ -137,4 +138,32 @@ footer {
 	text-align: center;
 	margin-top: 50px;
 	font-size: 12px;
+}
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 40px;
+		line-height: 1;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 15px;
+	}
+	.form-container {
+		padding: 10px 2px;
+	}
+	form {
+		flex-direction: column;
+	}
+	.instructions {
+		text-wrap: wrap;
+		text-align: center;
+		margin: 0 auto;
+		padding: 10px;
+	}
+	.submit-button {
+		margin: 10px auto;
+		text-align: center;
+		justify-self: center;
+	}
 }
